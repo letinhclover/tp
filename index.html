@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm Nang Dinh Dưỡng & Sức Khỏe Gia Đình</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #e8f5e9;
+            --danger: #c62828;
+            --danger-light: #ffebee;
+            --warning: #f57f17;
+            --warning-light: #fffde7;
+            --text: #2c3e50;
+            --bg: #f8f9fa;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Rule Box */
+        .rule-box {
+            background: var(--primary-light);
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .rule-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .step {
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        }
+
+        /* Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fcfcfc;
+        }
+
+        .tag-good {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .tag-bad {
+            color: var(--danger);
+            font-weight: bold;
+        }
+
+        /* Kids Section */
+        .kids-section {
+            background: #fff8e1;
+            border: 2px dashed #ffa000;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .kids-title {
+            color: #e65100;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tip-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ffa000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 8px; }
+            .container { padding: 15px; }
+            th, td { padding: 8px 10px; font-size: 0.88rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🥗 BẢNG GHI NHỚ DINH DƯỠNG GIA ĐÌNH</h1>
+    <div class="subtitle">Sức khỏe bền vững • Kiểm soát đường huyết & mỡ máu • Lối sống lành mạnh</div>
+
+    <!-- NGUYÊN TẮC ĂN UỐNG -->
+    <div class="rule-box">
+        <div style="font-weight: bold; font-size: 1.1rem; color: var(--primary);">
+            ⚡ NGUYÊN TẮC "3 BƯỚC ĂN NGƯỢC" THẦN THÁNH
+        </div>
+        <div style="font-size: 0.9rem; margin-top: 5px;">Giúp cản đường huyết vọt tăng, đốt mỡ bụng tự nhiên và tránh mệt mỏi sau ăn:</div>
+        <div class="rule-steps">
+            <div class="step">1. 🥗 Ăn Rau & Húp Canh trước (Tạo lớp màng xơ bảo vệ ruột)</div>
+            <div class="step">2. 🥩 Ăn Đạm & Chất Béo (Cá, thịt, trứng... giúp no lâu)</div>
+            <div class="step">3. 🍚 Ăn Tinh Bột sau cùng (Cơm trắng ½ - ⅔ tô)</div>
+        </div>
+    </div>
+
+    <!-- BẢNG PHÂN LOẠI THỰC PHẨM -->
+    <h2 style="color: var(--primary); font-size: 1.3rem;">📋 Bảng Phân Loại Thực Phẩm Hàng Ngày</h2>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nhóm chất</th>
+                    <th>🟢 NÊN ĂN (Ưu tiên)</th>
+                    <th>🔴 NÊN TRÁNH / HẠN CHẾ</th>
+                    <th>💡 Lợi ích Y Khoa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>🌾 TINH BỘT<br>(Carbs)</strong></td>
+                    <td>
+                        • Cơm trắng (½ - ⅔ tô)<br>
+                        • Cơm gạo lứt, khoai lang<br>
+                        • Yến mạch, bún/phở tươi
+                    </td>
+                    <td>
+                        • Nước ngọt, trà sữa, tăng lực<br>
+                        • Bánh kẹo, chè, kem<br>
+                        • Bánh mì trắng, xôi, mì gói
+                    </td>
+                    <td>Hạn chế tăng đột ngột chỉ số HbA1c (Đường huyết) và mỡ nội tạng.</td>
+                </tr>
+                <tr>
+                    <td><strong>🥩 CHẤT ĐẠM<br>(Protein)</strong></td>
+                    <td>
+                        • Cá biển béo (Cá hồi, thu, nục)<br>
+                        • Thịt nạc luộc/hấp (heo, bò, gà)<br>
+                        • Trứng gà luộc (1-2 quả/ngày)<br>
+                        • Đậu hũ / Đậu phụ
+                    </td>
+                    <td>
+                        • Lạp xưởng, xúc xích, đồ đóng hộp<br>
+                        • Nội tạng động vật (lòng, gan)<br>
+                        • Thịt chiên tẩm bột nhiều mỡ
+                    </td>
+                    <td>Giữ cơ bắp, no lâu. Omega-3 từ cá biển hỗ trợ hạ mỡ máu Triglycerides.</td>
+                </tr>
+                <tr>
+                    <td><strong>🥑 CHẤT BÉO<br>(Healthy Fats)</strong></td>
+                    <td>
+                        • Mỡ cá biển, quả bơ<br>
+                        • Dầu ô-liu, bơ thực vật sạch<br>
+                        • Hạt óc chó, hạnh nhân, hạt bí<br>
+                        • Lòng đỏ trứng gà
+                    </td>
+                    <td>
+                        • <strong>Dầu ăn chiên đi chiên lại</strong><br>
+                        • Mỡ động vật quá dày<br>
+                        • Da gà/vịt công nghiệp<br>
+                        • Margarine (Bơ nhân tạo)
+                    </td>
+                    <td>Tránh chất béo chuyển hóa (Trans-fat) gây xơ vữa động mạch và tăng mỡ máu.</td>
+                </tr>
+                <tr>
+                    <td><strong>🥦 CHẤT XƠ<br>(Fiber & Vi chất)</strong></td>
+                    <td>
+                        • Rau lá xanh (cải, muống, xà lách)<br>
+                        • Củ quả: Khổ qua, dưa leo, cà chua<br>
+                        • Trái cây ít ngọt: Ổi, bưởi, táo xanh
+                    </td>
+                    <td>
+                        • Trái cây quá ngọt: Sầu riêng, xoài chín, nhãn, vải, mít<br>
+                        • Nước ép trái cây (bị mất xơ)
+                    </td>
+                    <td>Tạo màng cản đường, nuôi vi sinh đường ruột, bổ sung vitamin tự nhiên.</td>
+                </tr>
+                <tr>
+                    <td><strong>🥛 BỔ SUNG<br>(Supplements)</strong></td>
+                    <td>
+                        • <strong>Vitamin D3 (1000 IU):</strong> 1 viên/ngày sau bữa ăn trưa/tối có chất béo (cho 2 vợ chồng).
+                    </td>
+                    <td>
+                        • Không dùng viên D3 của người lớn cho trẻ em (tránh nguy cơ nghẹn/quá liều).
+                    </td>
+                    <td>Tăng hấp thu Canxi, tăng độ nhạy Insulin, hỗ trợ hạ đường huyết.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- NGHỆ THUẬT DẠY CON KHÔNG UỐNG TRÀ SỮA, NƯỚC NGỌT -->
+    <div class="kids-section">
+        <div class="kids-title">
+            <span>🧸 NGHỆ THUẬT NÓI CHUYỆN VỚI CON GÁI (6 TUỔI)</span>
+        </div>
+        <p style="font-size: 0.95rem; margin-bottom: 15px;">
+            Trẻ 6 tuổi tiếp thu tốt nhất qua <strong>hình ảnh so sánh, câu chuyện ngắn và hành động làm gương của bố mẹ</strong>, thay vì cấm đoán khắt khe.
+        </p>
+
+        <div class="tip-card">
+            <strong>1. 🦷 Giải thích bằng hình ảnh "Con sâu răng & Bộ xương yếu"</strong>
+            <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                Nói với con: <em>"Trong trà sữa, nước ngọt có rất nhiều 'bạn đường xấu'. Bạn này vào răng sẽ gọi 'con sâu răng' đến đục lỗ làm đau răng, và làm cho xương của con không cao lên như công chúa được đâu!"</em>
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <strong>2. 🧪 Thí nghiệm nhỏ vui nhộn tại nhà</strong>
+            <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                Rót một ít nước ngọt ra ly nhỏ rồi thả một chiếc răng giả hoặc mẩu xương gà nhỏ vào để con quan sát. Hoặc chỉ cho con xem lượng đường trong 1 chai nước ngọt tương đương với 8-10 muỗng đường ăn lớn — con sẽ tự thấy sợ.
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <strong>3. 🍹 Thay thế bằng "Nước thần kỳ" ngon lành</strong>
+            <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                Thay vì cấm tuyệt đối, mẹ làm cho con: <strong>Nước ép ổi/dưa hấu tự làm không đường, nước dừa tươi, hoặc sữa tươi không đường</strong> và gọi đó là "Nước thần kỳ giúp con cao lớn và xinh đẹp".
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <strong>4. 🎁 Quy tắc "Phần thưởng ngày Lễ" (80/20)</strong>
+            <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                Không cấm $100\%$ khiến con thèm luồng. Hãy quy định: Ngày thường cả nhà cùng uống nước lọc/nước mát. Chỉ dịp sinh nhật hoặc cuối tuần đặc biệt con mới được uống vài ngụm trà sữa cùng bố mẹ.
+            </p>
+        </div>
+
+        <div class="tip-card">
+            <strong>5. 👨‍👩‍👧 Bố mẹ làm gương trước</strong>
+            <p style="margin: 5px 0 0 0; font-size: 0.9rem;">
+                Con trẻ luôn bắt chước bố mẹ. Bố đi làm về uống nước lọc/trà đá không đường, mẹ nấu ăn không dùng nhiều đường sẽ tạo thói quen vị giác nhạt tự nhiên cho con từ bé.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        ❤️ Gia đình là số 1 • Cùng nhau khỏe mạnh mỗi ngày ❤️
+    </div>
+</div>
+
+</body>
+</html>
